@@ -1,0 +1,31 @@
+<div class="container-fluid height-full">
+    <app-admin-menu></app-admin-menu>
+    <div id="logo" class="row d-flex justify-content-center">
+        <h1 class="col-xl-12" (click)="setFormValue(form)">Library</h1>
+    </div>
+    <div class="container row main height-full width-full">
+        <div class="width-full">
+          <form #form="ngForm" class="row width-full">
+            <div class="col-xl-12 col-md-12 book">Book details</div>
+            <div class="col-xl-12 col-md-12">
+              <i class="col-xl-6 col-md-6 fas fa-book fa-3x"></i>
+              <input type="text" class="col-xl-6 col-md-6" [(ngModel)]="book.name" name="name">
+            </div>
+            <div class="col-xl-12 col-md-12">
+              <i class="col-xl-6 col-md-6 fas fa-feather-alt fa-3x"></i>
+              <input type="text" class="col-xl-6 col-md-6" [(ngModel)]="book.author" name="author">
+            </div>
+            <div class="col-xl-12 col-md-12">
+              <i class="col-xl-6 col-md-6 fas fa-swatchbook fa-3x"></i>
+              <input type="text" class="col-xl-6 col-md-6" [(ngModel)]="book.type" name="type">
+            </div>
+            <div class="col-xl-12 col-md-12">
+                <button type="submit" (click)="add(form)" class="btn-add col-xl-4 col-md-4">Add</button>
+                <button type="submit" (click)="update(form)" class="btn-style col-xl-4 col-md-4">Update</button>
+                <button type="submit" (click)="delete(form)" class="btn-delete col-xl-4 col-md-4">Delete</button>
+            </div>
+            <button type="submit" (click)="addExemplary()" class="btn-style col-xl-12 col-md-12">Add Exemplary</button>
+          </form>
+        </div>
+    </div>
+</div>

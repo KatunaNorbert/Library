@@ -1,0 +1,100 @@
+h1{
+    font-family: 'Arial';
+    text-align: center;
+    color: white
+}
+
+.container-fluid{
+    background-image: url(../../images/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+}
+
+.menu{
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.menu a{
+    text-align: center;
+    align-self: flex-end;
+    color: white !important;
+}
+
+.show{
+    width: 80%;
+    min-height: 60%;
+    margin: auto;
+    background-color: #38352f;
+    opacity: 0.9;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.show form{
+    height: 100px;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+form input{
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#name{
+    font-size: 30px;
+}
+
+.books-list{
+    min-height: 80px;
+    max-height: 400px;
+    padding-top: 20p;
+    overflow: scroll;
+}
+
+.books-list li{
+    background-color: #9ea85f;
+    margin: 20px 0;
+}
+
+.books-list span{
+    text-align: center;
+    font-size: 20px;
+}
+
+#logo{
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.height-full {
+  height: 100vh;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.btn-style{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2c74e0;
+    opacity: 0.8;
+    margin: auto;
+    border: 0;
+    width: 100%;
+}
+
+.btn-style:hover{
+    background-color: #2c74e9;
+    opacity: 1;
+}

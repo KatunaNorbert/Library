@@ -1,0 +1,37 @@
+<div class="container-fluid height-full">
+    <app-admin-menu></app-admin-menu>
+    <div id="logo" class="row d-flex justify-content-center">
+        <h1 class="col-xl-12" (click)="getUser(form)">Library</h1>
+    </div>
+    <div class="container row main height-full width-full">
+        <div class="row width-full">
+            <form class="width-full" #form="ngForm">
+              <div class="row form-group verical-space">
+                <input class="col-xl-5 col-md-5 form-control" type="text" [(ngModel)]="user.phone" name="phone">
+                <input class="col-xl-2 col-md-0 hidden">
+                <input class="col-xl-5 col-md-5 form-control right-input" type="text" [(ngModel)]="user.cnp" name="cnp">
+              </div>
+              <div class="row form-group verical-space">
+                <input class="col-xl-12 col-md-12 form-control" type="text"  [(ngModel)]="user.name" name="name">
+              </div>
+              <div class="row form-group verical-space">
+                <input class="col-xl-12 col-md-12 form-control" type="text" [(ngModel)]="user.email" name="email">
+              </div>    
+              <div class="row form-group verical-space">
+                <input class="col-xl-12 col-md-12 form-control" type="text" [(ngModel)]="user.password" name="password">
+              </div>
+              <div class="row form-group verical-space">
+                <input class="col-xl-12 col-md-12 form-control" type="text" [(ngModel)]="user.adress" name="adress">
+              </div>
+              <div class="row form-group verical-space">
+                <input class="col-xl-12 col-md-12 form-control" type="text" [(ngModel)]="user.type" name="type">
+              </div>
+              <div class="row verical-space">    
+                <button (click)="addUser()" class="btn-add col-xl-4 col-md-4">Add</button>
+                <button (click)="update()" class="btn-style col-xl-4 col-md-4">Update</button>
+                <button (click)="delete()" class="btn-delete col-xl-4 col-md-4">Delete</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>

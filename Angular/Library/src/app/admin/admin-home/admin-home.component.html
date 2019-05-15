@@ -1,0 +1,22 @@
+<div class="container-fluid height-full">
+    <app-admin-menu></app-admin-menu>
+    <div id="logo" class="row d-flex justify-content-center">
+        <h1 class="col-xl-12">Library</h1>
+    </div>
+    <div class="row show">
+        <div class="row content">
+        <form class="col-lx-12 col-md-12" #form="ngForm" (ngSubmit)="searchByName(form)">
+            <input ngModel name="name" #name="ngModel" class="col-xl-12 col-md-12 form-grup" type="text" placeholder="Book name">
+            <button class="col-xl-12 col-md-12 btn-style">Search</button>
+        </form>
+        <ul class="col-xl-12 col-md-12 books-list">
+            <li class="row" *ngFor="let book of books" (click)="giveBookDetails(book.id)">
+                <span class="col-xl-12 col-md-12" id="name">{{book.name}}</span>
+                <span class="col-xl-6 col-md-6" id="author">{{book.author}}</span>
+                <span class="col-xl-6 col-md-6" id="number">{{book.type}}</span>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+</div>

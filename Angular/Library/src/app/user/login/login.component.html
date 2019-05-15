@@ -1,0 +1,22 @@
+<div class="container-fluid height-full">
+    <app-menu></app-menu>
+    <div id="logo" class="row d-flex justify-content-center">
+        <h1 class="col-xl-12">Library</h1>
+    </div>
+    <div class="container row main height-full width-full">
+      <div class="row width-full">
+          <form #form="ngForm" (ngSubmit)="login(form)" class="width-full">
+            <div class="row form-group verical-space">
+              <input ngModel name="email" #email="ngModel" class="col-xl-12 col-md-12 form-control" type="email"  aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="row form-group verical-space">
+              <input ngModel name="password" #password="ngModel" class="col-xl-12 col-md-12 form-control" type="password" placeholder="Password">
+            </div>
+            <div class="row alert alert-danger" *ngIf="LogError">Wrong email or password</div>
+            <div class="row verical-space">    
+              <button type="submit" class="btn-style col-xl-12">Login</button>
+            </div>
+          </form>
+      </div>
+    </div>
+</div>
